@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(../assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    color: #ffffff;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 120px;
+    margin-top: 32px;
+}
+
+header div {
+    display: flex;
+    width: 120px;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%);
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    height: auto;
+    background-color: #121214;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+main * {
+    /*border: 1px solid red;*/
+}
+
+main {
+    max-width: 520px;
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+    margin: 32px auto;
+}
+
+section {
+    background-image: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #262629;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+}
+
+section div h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+section div p {
+    margin-bottom: 24px;
+    color: #c1c1c1;
+    letter-spacing: -0.18px;
+}
+
+section div ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+}
+
+.series-list li {
+    max-width: 100px;
+    max-height: 150px;
+    transition: transform 0.4s;
+}
+
+.series-list li:hover {
+    transform: scale(1.1);
+}
+
+.series-list img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #555555;
+}
+
+.films-list li {
+    max-width: 100px;
+    max-height: 150px;
+    transition: transform 0.4s;
+}
+
+.films-list li:hover {
+    transform: scale(1.1);
+}
+
+.films-list img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #555555;
+}
+
+.redes-list li {
+    transition: transform 0.4s;
+}
+
+.redes-list li:hover {
+    transform: scale(1.1);
+}
+
+header div {
+    animation: fromUp 0.7s backwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fromUp {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    top {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main section {
+    animation: fromLeft 0.7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+main section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 1s;
+}
